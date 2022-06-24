@@ -22,6 +22,6 @@ func Publish(topic string, arg ...interface{}) {
 	bus.Publish(topic, arg...)
 }
 
-func Subscribe(topic string, handler func()) error {
+func Subscribe(topic string, handler interface{}) error {
 	return bus.Subscribe(topic, handler)
 }
