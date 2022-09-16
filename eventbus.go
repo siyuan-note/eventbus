@@ -25,3 +25,50 @@ func Publish(topic string, arg ...interface{}) {
 func Subscribe(topic string, handler interface{}) error {
 	return bus.Subscribe(topic, handler)
 }
+
+// 消息推送事件。
+const (
+	CtxPushMsg = "pushMsg"
+
+	CtxPushMsgToProgress = iota
+	CtxPushMsgToStatusBar
+	CtxPushMsgToStatusBarAndProgress
+)
+
+// 数据库索引事件。
+const (
+	EvtSQLInsertBlocks    = "sql.insert.blocks"
+	EvtSQLInsertBlocksFTS = "sql.insert.blocks_fts"
+)
+
+// 数据仓库本地事件。
+const (
+	EvtCheckoutBeforeWalkData    = "repo.checkout.beforeWalkData"
+	EvtCheckoutWalkData          = "repo.checkout.walkData"
+	EvtCheckoutUpsertFiles       = "repo.checkout.upsertFiles"
+	EvtCheckoutUpsertFile        = "repo.checkout.upsertFile"
+	EvtCheckoutRemoveFiles       = "repo.checkout.removeFiles"
+	EvtCheckoutRemoveFile        = "repo.checkout.removeFile"
+	EvtIndexBeforeWalkData       = "repo.index.beforeWalkData"
+	EvtIndexWalkData             = "repo.index.walkData"
+	EvtIndexBeforeGetLatestFiles = "repo.index.beforeGetLatestFiles"
+	EvtIndexGetLatestFile        = "repo.index.getLatestFile"
+	EvtIndexUpsertFiles          = "repo.index.upsertFiles"
+	EvtIndexUpsertFile           = "repo.index.upsertFile"
+)
+
+// 数据仓库云端同步事件。
+const (
+	EvtCloudBeforeUploadIndex    = "repo.cloudBeforeUploadIndex"
+	EvtCloudBeforeUploadFiles    = "repo.cloudBeforeUploadFiles"
+	EvtCloudBeforeUploadFile     = "repo.cloudBeforeUploadFile"
+	EvtCloudBeforeUploadChunks   = "repo.cloudBeforeUploadChunks"
+	EvtCloudBeforeUploadChunk    = "repo.cloudBeforeUploadChunk"
+	EvtCloudBeforeDownloadIndex  = "repo.cloudBeforeDownloadIndex"
+	EvtCloudBeforeDownloadFiles  = "repo.cloudBeforeDownloadFiles"
+	EvtCloudBeforeDownloadFile   = "repo.cloudBeforeDownloadFile"
+	EvtCloudBeforeDownloadChunks = "repo.cloudBeforeDownloadChunks"
+	EvtCloudBeforeDownloadChunk  = "repo.cloudBeforeDownloadChunk"
+	EvtCloudBeforeDownloadRef    = "repo.cloudBeforeDownloadRef"
+	EvtCloudBeforeUploadRef      = "repo.cloudBeforeUploadRef"
+)
