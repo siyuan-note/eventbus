@@ -60,6 +60,8 @@ const (
 
 // 数据仓库云端同步事件。
 const (
+	EvtCloudLock                 = "repo.cloudLock"
+	EvtCloudUnlock               = "repo.cloudUnlock"
 	EvtCloudBeforeUploadIndex    = "repo.cloudBeforeUploadIndex"
 	EvtCloudBeforeUploadFiles    = "repo.cloudBeforeUploadFiles"
 	EvtCloudBeforeUploadFile     = "repo.cloudBeforeUploadFile"
