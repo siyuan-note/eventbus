@@ -42,7 +42,6 @@ const (
 	EvtSQLDeleteBlocks    = "sql.delete.blocks"
 
 	EvtSQLInsertHistory = "sql.insert.history"
-	EvtSQLDeleteHistory = "sql.delete.history"
 )
 
 // 数据仓库本地事件。
