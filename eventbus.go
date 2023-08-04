@@ -41,7 +41,8 @@ const (
 	EvtSQLInsertBlocksFTS = "sql.insert.blocks_fts"
 	EvtSQLDeleteBlocks    = "sql.delete.blocks"
 
-	EvtSQLInsertHistory = "sql.insert.history"
+	EvtSQLInsertHistory      = "sql.insert.history"
+	EvtSQLInsertAssetContent = "sql.insert.assetContent"
 )
 
 // 数据仓库本地事件。
