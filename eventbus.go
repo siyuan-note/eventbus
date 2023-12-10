@@ -81,5 +81,5 @@ const (
 	EvtCloudBeforeUploadCheckIndex = "repo.cloudBeforeUploadCheckIndex"
 	EvtCloudBeforeFixObjects       = "repo.cloudBeforeFixObjects"
 	EvtCloudAfterFixObjects        = "repo.cloudAfterFixObjects"
-	EvtCloudDataRepoCorrupted      = "repo.cloudDataRepoCorrupted"
+	EvtCloudCorrupted              = "repo.cloudCorrupted"
 )
