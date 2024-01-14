@@ -30,7 +30,8 @@ func Subscribe(topic string, handler interface{}) error {
 const (
 	CtxPushMsg = "pushMsg"
 
-	CtxPushMsgToProgress = iota
+	CtxPushMsgToNone = iota
+	CtxPushMsgToProgress
 	CtxPushMsgToStatusBar
 	CtxPushMsgToStatusBarAndProgress
 )
