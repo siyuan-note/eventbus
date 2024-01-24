@@ -84,3 +84,15 @@ const (
 	EvtCloudAfterFixObjects        = "repo.cloudAfterFixObjects"
 	EvtCloudCorrupted              = "repo.cloudCorrupted"
 )
+
+// 云端数据仓库清理事件。
+const (
+	EvtCloudPurgeListObjects     = "repo.cloudPurgeListObjects"
+	EvtCloudPurgeListIndexes     = "repo.cloudPurgeListIndexes"
+	EvtCloudPurgeListRefs        = "repo.cloudPurgeListRefs"
+	EvtCloudPurgeDownloadIndex   = "repo.cloudPurgeDownloadIndex"
+	EvtCloudPurgeDownloadFiles   = "repo.cloudPurgeDownloadFiles"
+	EvtCloudPurgeRemoveObjects   = "repo.cloudPurgeRemoveObjects"
+	EvtCloudPurgeRemoveIndexes   = "repo.cloudPurgeRemoveIndexes"
+	EvtCloudPurgeRemoveIndexesV2 = "repo.cloudPurgeRemoveIndexesV2"
+)
