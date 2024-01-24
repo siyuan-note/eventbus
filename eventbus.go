@@ -90,7 +90,7 @@ const (
 	EvtCloudPurgeListObjects     = "repo.cloudPurgeListObjects"
 	EvtCloudPurgeListIndexes     = "repo.cloudPurgeListIndexes"
 	EvtCloudPurgeListRefs        = "repo.cloudPurgeListRefs"
-	EvtCloudPurgeDownloadIndex   = "repo.cloudPurgeDownloadIndex"
+	EvtCloudPurgeDownloadIndexes = "repo.cloudPurgeDownloadIndexes"
 	EvtCloudPurgeDownloadFiles   = "repo.cloudPurgeDownloadFiles"
 	EvtCloudPurgeRemoveObjects   = "repo.cloudPurgeRemoveObjects"
 	EvtCloudPurgeRemoveIndexes   = "repo.cloudPurgeRemoveIndexes"
