@@ -38,9 +38,10 @@ const (
 
 // 数据库索引事件。
 const (
-	EvtSQLInsertBlocks    = "sql.insert.blocks"
-	EvtSQLInsertBlocksFTS = "sql.insert.blocks_fts"
-	EvtSQLDeleteBlocks    = "sql.delete.blocks"
+	EvtSQLInsertBlocks       = "sql.insert.blocks"
+	EvtSQLInsertBlocksFTS    = "sql.insert.blocks_fts"
+	EvtSQLDeleteBlocks       = "sql.delete.blocks"
+	EvtSQLUpdateBlocksHPaths = "sql.update.blocks.hPaths"
 
 	EvtSQLInsertHistory      = "sql.insert.history"
 	EvtSQLInsertAssetContent = "sql.insert.assetContent"
