@@ -45,6 +45,9 @@ const (
 
 	EvtSQLInsertHistory      = "sql.insert.history"
 	EvtSQLInsertAssetContent = "sql.insert.assetContent"
+
+	EvtSQLIndexChanged = "sql.index.changed"
+	EvtSQLIndexFlushed = "sql.index.flushed"
 )
 
 // 数据仓库本地事件。
